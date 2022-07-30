@@ -4,8 +4,52 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+		}
 
-	<link rel="stylesheet" href="./src/css/style.css">
+		canvas {
+			width: 100%;
+		}
+
+		@font-face {
+			font-family: 'washYourHand';
+			src: url('../assets/fonts/washYourHand.ttf');
+		}
+
+		.wrapper {
+			display: flex;
+			width: 100%;
+			min-height: 100vh;
+			background-color: yellow;
+		}
+
+		.wrapper._hide {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			z-index: -1;
+		}
+
+		.wrapper__body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 50%;
+			height: 50vh;
+			margin: auto;
+			background-color: red;
+		}
+
+		.wrapper__body p {
+			font-size: 60px;
+			font-family: 'washYourHand';
+
+		}
+	</style>
 </head>
 
 <body>
